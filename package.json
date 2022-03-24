@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.24",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.7.2",
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
     "eslint": "8.10.0",

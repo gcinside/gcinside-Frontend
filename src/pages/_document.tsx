@@ -4,46 +4,38 @@ import Document, {
   Main,
   NextScript,
   DocumentContext,
-} from "next/document";
-import {ServerStyleSheet} from "styled-components";
+} from 'next/document'
+import { extractCritical } from '@emotion/server'
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet();
-    const originalRenderPage = ctx.renderPage;
-    try {
-      ctx.renderPage = () =>
-          originalRenderPage({
-            enhanceApp: (App) => (props) =>
-                sheet.collectStyles(<App {...props} />),
-          });
-
-      const initialProps = await Document.getInitialProps(ctx);
-      return {
-        ...initialProps,
-        styles: (
-            <>
-              {initialProps.styles}
-              {sheet.getStyleElement()}
-            </>
-        ),
-      };
-    } finally {
-      sheet.seal();
+    const initialProps = await Document.getInitialProps(ctx)
+    const page = await ctx.renderPage()
+    const styles = extractCritical(page.html)
+    return {
+      ...initialProps,
+      ...page,
+      styles: (
+        <>
+          {initialProps.styles}
+          <style
+            data-emotion-css={styles.ids.join(' ')}
+            dangerouslySetInnerHTML={{ __html: styles.css }}
+          />
+        </>
+      ),
     }
   }
 
   render() {
     return (
-        <Html>
-          <Head>hello</Head>
-          <body>
-            <Main/>
-            <NextScript/>
-          </body>
-        </Html>
-    );
+      <Html lang="ko-kr">
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }
-
-export default MyDocument;
