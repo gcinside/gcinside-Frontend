@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import { css } from '@emotion/react'
@@ -12,11 +11,6 @@ const Home: NextPage = () => {
       <>
         <Head>
           <title>setting</title>
-          <meta name="description" content="setting"/>
-          <link rel="icon" href="#"/>
-          <div css={style}>
-            emotionJS 테스트.
-          </div>
         </Head>
       </>
   )
