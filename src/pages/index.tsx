@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <meta name="description" content="setting"/>
           <link rel="icon" href="#"/>
           <div css={style}>
-            emotionJS 테스트
+            emotionJS 테스트.
           </div>
         </Head>
       </>
