@@ -1,0 +1,24 @@
+import { css } from "@emotion/react";
+
+export const Positioner = css`
+    width: 100%;
+    height: 100vh;
+    padding: 15vh 0 0 15vh;
+`;
+
+export const Header = css`
+    width: 100%;
+    height: 56px;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    svg{
+        width: 40px;
+        height: 40px;
+        fill: black;
+    }
+`;
+
+export const svgStyle = css`
+    fill: black;
+`;
