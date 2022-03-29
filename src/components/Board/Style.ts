@@ -2,7 +2,6 @@ import { css } from '@emotion/react';
 
 export const Positioner = css`
     width: 1000px;
-    height: 100%;
     margin-top: 30px;
     border-radius: 5px;
     background: white;
@@ -58,4 +57,13 @@ export const NameWrapper = css`
     height: 20px;
     border-right: 1px solid #c2c2c2;
     margin-right: 20px;
+`;
+
+export const LikeWrapper = css`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 550px;
+    font-size: 18px;
+    font-weight: 300;
 `;

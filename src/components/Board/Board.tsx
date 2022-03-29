@@ -50,7 +50,79 @@ const DummyData = [
             like: 5,
         },
         {
+            id: 4,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
             id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 4,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 4,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        {
+            id: 4,
             image: <div css={S.ImageBox}></div>,
             title: '게시글 이름',
             name: '닉네임',
@@ -81,14 +153,23 @@ const DummyData = [
             date: '2022.03.29',
             like: 5,
         },
+        {
+            id: 5,
+            image: <div css={S.ImageBox}></div>,
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },
+        
 ]
 
 const Board = () => {
     return(
         <div css={S.Positioner}>
-                {DummyData && DummyData.map((item) => {
+                {DummyData && DummyData.map((item, idx) => {
                     return(
-                        <>
+                        <div key={idx}>
                             <div css={S.BoardContainer}>
                                 <div css={S.dummy} key={item.id}>
                                     {item.image}
@@ -99,11 +180,12 @@ const Board = () => {
                                             {item.date}
                                         </div>
                                     </div>
+                                    <div css={S.LikeWrapper}>{item.like}K</div>
                                 </div>
                             </div>
-                        </>
-                    )
-                })}
+                        </div>
+                    )}
+                )}
         </div>
     )
 }

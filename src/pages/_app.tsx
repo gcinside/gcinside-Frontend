@@ -6,7 +6,10 @@ import { css } from "@emotion/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div css={css`display: flex; background-color: #F9F9F9;`}>
+    <div css={css`
+      display: flex; 
+      background-color: #F9F9F9; 
+      `}>
       <Global styles={GlobalStyle}/>
       <SideBar />
       <Component {...pageProps}/>

@@ -2,8 +2,7 @@ import { css } from "@emotion/react";
 
 export const Positioner = css`
     width: 100%;
-    height: 100vh;
-    padding: 15vh 0 0 15vh;
+    padding: 15vh 0 15vh 15vh;
 `;
 
 export const Header = css`
