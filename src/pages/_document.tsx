@@ -2,7 +2,7 @@ import Document, {
   Html,
   Main,
   NextScript,
-  DocumentContext,
+  DocumentContext, Head,
 } from "next/document";
 import {ServerStyleSheet} from "styled-components";
 
@@ -35,6 +35,10 @@ class MyDocument extends Document {
   render() {
     return (
         <Html>
+          <Head>
+            <title>gcinside</title>
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet" />
+          </Head>
           <body>
             <Main/>
             <NextScript/>

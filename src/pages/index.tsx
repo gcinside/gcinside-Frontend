@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import Wrapper from '../components/background/index';
+import Wrapper from "../components/background/index";
 import {css, Global} from '@emotion/react';
 
 const GlobalStyle = css`

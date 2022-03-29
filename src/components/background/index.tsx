@@ -5,11 +5,12 @@ const Wrapper = () => {
   return (
       <>
         <S.Wrapper>
-          test
+          <S.LoginBox>
+            <S.Text>로그인</S.Text>
+          </S.LoginBox>
         </S.Wrapper>
       </>
   );
-
 }
 
 export default Wrapper;
