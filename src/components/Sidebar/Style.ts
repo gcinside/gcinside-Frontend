@@ -3,11 +3,15 @@ import { css } from "@emotion/react";
 export const Positioner = css`
     width: 320px;
     height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-items: flex-start;
     grid-template-rows: repeat(2, 180px);
     background-color: #131314;
+    position: fixed;
+    top: 0;
+`;
+
+export const SidebarContainer = css`
+    width: 320px;
+    height: 100vh;
 `;
 
 export const LogoWrapper = css`
@@ -19,7 +23,7 @@ export const LogoWrapper = css`
 `;
 
 export const SidebarListWrapper = css`
-    width: 100%;
+    width: 320px;
     height: 290px;
     display: grid;
     align-content: space-around;
