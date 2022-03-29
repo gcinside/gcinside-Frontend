@@ -4,12 +4,12 @@ import Wrapper from "../components/background/index";
 import {css, Global} from '@emotion/react';
 
 const GlobalStyle = css`
-  *, html {
+  * {
     margin: 0;
     padding: 0;
   }
 
-  body {
+  html, body {
     width: 100%;
     height: 100%;
   }

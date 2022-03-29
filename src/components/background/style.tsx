@@ -1,14 +1,16 @@
 import styled from "@emotion/styled";
 
-export const Wrapper = styled.div`
-  width: 100%;
-  height: 100vh;
+export const Flex = styled.div` //display:flex, jus-con: ctr, align-itm: ctr;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+export const Wrapper = styled(Flex)`
+  width: 100%;
+  height: 100vh;
   background-color: #10154A;
 `;
-export const LoginBox = styled.div`
+export const LoginBox = styled(Flex)`
   width: 600px;
   height: 740px;
   background: linear-gradient(147.66deg, rgba(255, 255, 255, 0.18) -0.87%, rgba(255, 255, 255, 0.03) 101.49%);
@@ -19,10 +21,7 @@ export const LoginBox = styled.div`
   border-radius: 25px;
 `;
 export const Text = styled.p`
-  @font-face {
-    font-family: 'Noto Sans KR';
-    font-weight: 700;
-  }
+  font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
