@@ -18,11 +18,12 @@ export const Wrapper = styled(Flex)`
     margin-top: -3vh;
   }
   .RC {
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     z-index: -1;
     margin-bottom: -30vh;
     margin-right: -75vh;
+    margin-top: 3vh;
   }
   .LC {
     width: 180px;
@@ -52,11 +53,25 @@ export const RightWrapper = styled(LeftWrapper)`
     margin-bottom: -13.5vh;
     margin-right: -88vh;
   }
+  .Line1 {
+    margin-left: -100vh;
+    margin-right: 60vh;
+    width: 120vh;
+    height: 1px;
+    background-color: white;
+  }
 `;
 export const LoginBoxWrapper = styled(Flex)`
   flex-direction: column;
   z-index: 1;
   margin-bottom: 15.5vh;
+  .Line {
+    margin-left: -40vh;
+    margin-right: -40vh;
+    width: 120vh;
+    height: 1px;
+    background-color: white;
+  }
 `;
 export const LoginBox = styled(Flex)`
   margin-left: 25vh;

@@ -16,6 +16,7 @@ const Wrapper = () => {
           </S.LeftWrapper>
           <S.RightWrapper>
             <S.LoginBoxWrapper>
+              <div className="Line" />
               <img className="RC" src={RC.src} alt="cone-image"/>
               <S.LoginBox>
                 <S.TextBox><S.Text>로그인</S.Text></S.TextBox>
@@ -32,6 +33,7 @@ const Wrapper = () => {
               </S.LoginBox>
               <img className="LC" src={LC.src} alt="cone-image"/>
             </S.LoginBoxWrapper>
+            <div className="Line1" />
             <S.GCINSIDE className="right">GCINSIDE</S.GCINSIDE>
           </S.RightWrapper>
         </S.Wrapper>
