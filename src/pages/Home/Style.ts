@@ -11,6 +11,7 @@ export const Header = css`
     font-size: 48px;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 30px;
     svg{
         width: 40px;
         height: 40px;
@@ -20,4 +21,8 @@ export const Header = css`
 
 export const svgStyle = css`
     fill: black;
+`;
+
+export const Components = css`
+    display: flex;
 `;

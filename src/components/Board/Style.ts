@@ -2,10 +2,10 @@ import { css } from '@emotion/react';
 
 export const Positioner = css`
     width: 1000px;
-    margin-top: 30px;
     border-radius: 5px;
     background: white;
     box-shadow: 0px 2px 8px 0px #0000000D;
+    margin-right: 24px;
 `;
 
 export const BoardContainer = css`

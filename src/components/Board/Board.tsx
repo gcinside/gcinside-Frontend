@@ -1,6 +1,6 @@
 import * as S from './Style'
 
-const DummyData = [
+export const DummyData = [
         {
             id: 1,
             image: <div css={S.ImageBox}></div>,
