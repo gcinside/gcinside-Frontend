@@ -1,6 +1,7 @@
 import Document, {
   Html,
   Main,
+  Head,
   NextScript,
   DocumentContext,
 } from 'next/document'
