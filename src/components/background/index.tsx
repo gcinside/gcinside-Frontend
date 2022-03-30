@@ -3,21 +3,31 @@ import * as S from "./style";
 import GoogleLogo from "@/src/utils/Google";
 import GithubLogo from "@/src/utils/Github";
 import CTL from "./controller.png";
+import LC from "./left-cone.png";
+import RC from "./right-cone.png";
 
 const Wrapper = () => {
   return (
       <>
         <S.Wrapper>
           <img className="CTL" src={CTL.src} alt="controller-image"/>
-          <S.LoginBox>
-            <S.Text>로그인</S.Text>
-            <S.OAuthBox1>
-              <GoogleLogo/><S.Text>Google 로그인</S.Text>
-            </S.OAuthBox1>
-            <S.OAuthBox2>
-              <GithubLogo/><S.Text>Github 로그인</S.Text>
-            </S.OAuthBox2>
-          </S.LoginBox>
+          <S.LoginBoxWrapper>
+            <img className="RC" src={RC.src} alt="cone-image"/>
+            <S.LoginBox>
+              <S.TextBox><S.Text>로그인</S.Text></S.TextBox>
+              <S.OAuthBtn1>
+                <GoogleLogo/><S.Text>Google 로그인</S.Text>
+              </S.OAuthBtn1>
+              <S.OAuthBtn2>
+                <GithubLogo/><S.Text>Github 로그인</S.Text>
+              </S.OAuthBtn2>
+              <S.SignUpCommentBox>
+                <S.SignUpComment>계정이 없으신가요?</S.SignUpComment>
+                <button>회원가입</button>
+              </S.SignUpCommentBox>
+            </S.LoginBox>
+            <img className="LC" src={LC.src} alt="cone-image"/>
+          </S.LoginBoxWrapper>
         </S.Wrapper>
       </>
   );

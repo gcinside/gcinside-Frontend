@@ -13,9 +13,28 @@ export const Wrapper = styled(Flex)`
     width: 680px;
     height: 630px;
   }
+  .RC {
+    width: 330px;
+    height: 330px;
+    z-index: -1;
+    margin-bottom: -30vh;
+    margin-right: -75vh;
+  }
+  .LC {
+    width: 180px;
+    height: 180px;
+    z-index: -1;
+    margin-top: -25vh;
+    margin-left: -40vh;
+  }
+`;
+export const LoginBoxWrapper = styled(Flex)`
+  flex-direction: column;
+  z-index: 1;
+  margin-bottom: 12.5vh;
 `;
 export const LoginBox = styled(Flex)`
-  margin-left: 15vh;
+  margin-left: 20vh;
   flex-direction: column;
   width: 485px;
   height: 620px;
@@ -23,20 +42,24 @@ export const LoginBox = styled(Flex)`
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   box-shadow: -15px 4px 18px rgba(0, 0, 0, 0.25), 12px 4px 30px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(52px);
+  backdrop-filter: blur(20px);
   border-radius: 25px;
+`;
+export const TextBox = styled(Flex)`
+  width: 100%;
+  height: 30vh;
 `;
 export const Text = styled.p`
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
-  line-height: 93px;
   color: #FFFFFF;
+  line-height: 50px;
 `;
-export const OAuthBox1 = styled(Flex)`
+export const OAuthBtn1 = styled(Flex)`
   width: 425px;
-  height: 60px;
+  height: 65px;
   background: #FFFFFF;
   border-radius: 15px;
   box-shadow : 0 0 10px 0 #FFFFFF;
@@ -48,8 +71,26 @@ export const OAuthBox1 = styled(Flex)`
     margin-left: 2vh;
   }
 `;
-export const OAuthBox2 = styled(OAuthBox1)`
+export const OAuthBtn2 = styled(OAuthBtn1)`
   margin-top: 2vh;
   background: #5A66FF;
   box-shadow : 0 0 10px 0 #5A66FF
-`
+`;
+export const SignUpCommentBox = styled(Flex)`
+  width: 22vh;
+  button {
+    margin-left: 1.5vh;
+    border: none;
+    background : none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #1D96F0;
+    font-size: 15px;
+    margin-bottom: 20vh;
+  }
+`;
+export const SignUpComment = styled(Text)`
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 20vh;
+  line-height: 60px;
+`;
