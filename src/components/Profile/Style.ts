@@ -6,8 +6,6 @@ export const Positioner = css`
     border-radius: 5px;
     box-shadow: 0px 2px 8px 0px #0000000D;
     background-color: #FFFFFF;
-    position: fixed;
-    right: 220px;
     display: flex;
     align-items: center;
 `;

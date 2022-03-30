@@ -26,3 +26,10 @@ export const svgStyle = css`
 export const Components = css`
     display: flex;
 `;
+
+export const Contents = css`
+    display: grid;
+    row-gap: 25px;
+    position: fixed;
+    right: 220px;
+`;
