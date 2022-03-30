@@ -28,8 +28,9 @@ export const Components = css`
 `;
 
 export const Contents = css`
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 25px;
     position: fixed;
-    right: 220px;
+    left: 1470px;
 `;

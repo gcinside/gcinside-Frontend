@@ -1,4 +1,3 @@
-import { css } from '@emotion/react';
 import type { NextPage } from 'next';
 import * as I from '../../Assets/index';
 import Board from '../../components/Board/Board';

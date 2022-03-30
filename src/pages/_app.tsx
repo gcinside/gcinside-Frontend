@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Global styles={GlobalStyle}/>
       {router.pathname === '/' ? null : <SideBar />}
       <Component {...pageProps}/>
+      
     </div>
   )
 }

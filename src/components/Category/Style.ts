@@ -1,5 +1,4 @@
 import { css } from '@emotion/react';
-import { CSSInterpolation } from '@emotion/serialize';
 
 export const Positioner = css`
     width: 342px;
