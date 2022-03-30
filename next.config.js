@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   webpack(config) {
     config.resolve.modules.push(__dirname); // 추가

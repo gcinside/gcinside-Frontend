@@ -13,7 +13,7 @@ const GlobalStyle = css`
     width: 100%;
     height: 100%;
   }
-`
+`;
 
 const Home: NextPage = () => {
   return (
