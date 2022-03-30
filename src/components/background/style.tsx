@@ -9,6 +9,7 @@ export const Wrapper = styled(Flex)`
   width: 100%;
   height: 100vh;
   background-color: #10154A;
+  overflow: hidden;
   .CTL {
     width: 670px;
     height: 620px;
