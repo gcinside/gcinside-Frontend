@@ -10,8 +10,11 @@ export const Wrapper = styled(Flex)`
   height: 100vh;
   background-color: #10154A;
   .CTL {
-    width: 680px;
-    height: 630px;
+    width: 670px;
+    height: 620px;
+    z-index: 0;
+    margin-bottom: 8vh;
+    margin-top: -3vh;
   }
   .RC {
     width: 330px;
@@ -28,13 +31,34 @@ export const Wrapper = styled(Flex)`
     margin-left: -40vh;
   }
 `;
+export const GCINSIDE = styled.p`
+  margin-top: -11vh;
+  margin-left: -42vh;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 130px;
+  font-weight: bold;
+  -webkit-text-fill-color: #10154A;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  z-index: 1;
+`;
+export const LeftWrapper = styled(Flex)`
+  flex-direction: column;
+`;
+export const RightWrapper = styled(LeftWrapper)`
+  flex-direction: column;
+  .right {
+    margin-bottom: -13.5vh;
+    margin-right: -88vh;
+  }
+`;
 export const LoginBoxWrapper = styled(Flex)`
   flex-direction: column;
   z-index: 1;
-  margin-bottom: 12.5vh;
+  margin-bottom: 15.5vh;
 `;
 export const LoginBox = styled(Flex)`
-  margin-left: 20vh;
+  margin-left: 25vh;
   flex-direction: column;
   width: 485px;
   height: 620px;

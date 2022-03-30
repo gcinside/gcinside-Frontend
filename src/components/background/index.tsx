@@ -10,24 +10,30 @@ const Wrapper = () => {
   return (
       <>
         <S.Wrapper>
-          <img className="CTL" src={CTL.src} alt="controller-image"/>
-          <S.LoginBoxWrapper>
-            <img className="RC" src={RC.src} alt="cone-image"/>
-            <S.LoginBox>
-              <S.TextBox><S.Text>로그인</S.Text></S.TextBox>
-              <S.OAuthBtn1>
-                <GoogleLogo/><S.Text>Google 로그인</S.Text>
-              </S.OAuthBtn1>
-              <S.OAuthBtn2>
-                <GithubLogo/><S.Text>Github 로그인</S.Text>
-              </S.OAuthBtn2>
-              <S.SignUpCommentBox>
-                <S.SignUpComment>계정이 없으신가요?</S.SignUpComment>
-                <button>회원가입</button>
-              </S.SignUpCommentBox>
-            </S.LoginBox>
-            <img className="LC" src={LC.src} alt="cone-image"/>
-          </S.LoginBoxWrapper>
+          <S.LeftWrapper>
+            <S.GCINSIDE>GCINSIDE</S.GCINSIDE>
+            <img className="CTL" src={CTL.src} alt="controller-image"/>
+          </S.LeftWrapper>
+          <S.RightWrapper>
+            <S.LoginBoxWrapper>
+              <img className="RC" src={RC.src} alt="cone-image"/>
+              <S.LoginBox>
+                <S.TextBox><S.Text>로그인</S.Text></S.TextBox>
+                <S.OAuthBtn1>
+                  <GoogleLogo/><S.Text>Google 로그인</S.Text>
+                </S.OAuthBtn1>
+                <S.OAuthBtn2>
+                  <GithubLogo/><S.Text>Github 로그인</S.Text>
+                </S.OAuthBtn2>
+                <S.SignUpCommentBox>
+                  <S.SignUpComment>계정이 없으신가요?</S.SignUpComment>
+                  <button>회원가입</button>
+                </S.SignUpCommentBox>
+              </S.LoginBox>
+              <img className="LC" src={LC.src} alt="cone-image"/>
+            </S.LoginBoxWrapper>
+            <S.GCINSIDE className="right">GCINSIDE</S.GCINSIDE>
+          </S.RightWrapper>
         </S.Wrapper>
       </>
   );
