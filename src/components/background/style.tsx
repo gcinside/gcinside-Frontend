@@ -9,15 +9,16 @@ export const Wrapper = styled(Flex)`
   width: 100%;
   height: 100vh;
   background-color: #10154A;
+  .CTL {
+    width: 680px;
+    height: 630px;
+  }
 `;
-export const ImageG = styled.img`
-  width: 100%;
-  height: 100%;
-`
 export const LoginBox = styled(Flex)`
+  margin-left: 15vh;
   flex-direction: column;
-  width: 600px;
-  height: 740px;
+  width: 485px;
+  height: 620px;
   background: linear-gradient(147.66deg, rgba(255, 255, 255, 0.18) -0.87%, rgba(255, 255, 255, 0.03) 101.49%);
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -29,19 +30,19 @@ export const Text = styled.p`
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 58px;
   line-height: 93px;
   color: #FFFFFF;
 `;
 export const OAuthBox1 = styled(Flex)`
-  width: 520px;
-  height: 78px;
+  width: 425px;
+  height: 60px;
   background: #FFFFFF;
   border-radius: 15px;
   box-shadow : 0 0 10px 0 #FFFFFF;
   p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 25px;
     color: black;
     margin-left: 2vh;

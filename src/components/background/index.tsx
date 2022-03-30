@@ -2,14 +2,13 @@ import React from "react";
 import * as S from "./style";
 import GoogleLogo from "@/src/utils/Google";
 import GithubLogo from "@/src/utils/Github";
-import ExImage from '/src/components/controller.png';
-import Image from 'next/image';
+import CTL from "./controller.png";
 
 const Wrapper = () => {
   return (
       <>
-        <img src={ExImage} alt='이미지 테스트' />
         <S.Wrapper>
+          <img className="CTL" src={CTL.src} alt="controller-image"/>
           <S.LoginBox>
             <S.Text>로그인</S.Text>
             <S.OAuthBox1>
