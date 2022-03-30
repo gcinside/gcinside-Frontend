@@ -1,17 +1,30 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import { css } from '@emotion/react'
+import Wrapper from "../components/background";
+import {css, Global} from '@emotion/react';
 
-const style = css({
-  color: 'hotpink',
-})
+const GlobalStyle = css`
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+`;
 
 const Home: NextPage = () => {
   return (
       <>
+        <Global styles={GlobalStyle}/>
         <Head>
-          <title>setting</title>
+          <title>gcinside</title>
+          <meta name="description" content="setting"/>
+          <link rel="icon" href="#"/>
         </Head>
+        <Wrapper/>
       </>
   )
 }
