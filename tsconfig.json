@@ -18,7 +18,7 @@
     "paths": {
       "@/*": ["*"],
     },
-    "typeRoots": ["./node_modules/@types", "./@types"]
+    "typeRoots": ["./node_modules/@types", "./@types"],
     "types": ["@emotion/react/types/css-prop"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
