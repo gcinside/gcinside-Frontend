@@ -87,11 +87,11 @@ export const LoginBox = styled.div`
 
 export const Header = styled(Flex)`
   width: 100%;
-  height: 30vh;
+  height: 29vh;
   font-family: 'Noto Sans KR', sans-serif;
   color: #FFFFFF;
-  font-size: 56px;
-  font-weight: lighter;
+  font-size: 55px;
+  font-weight: 300;
 `;
 export const Text = styled.p`
   font-family: 'Noto Sans KR', sans-serif;
@@ -118,8 +118,10 @@ export const OAuthBtn2 = styled(OAuthBtn1)`
 
 export const SignUpCommentBox = styled(Flex)`
   width: 100%;
-  margin-bottom: 15vh;
+  margin-bottom: 18vh;
+  margin-top: 1vh;
   button {
+    margin-top: 3px;
     margin-left: 1vh;
     border: none;
     background : none;

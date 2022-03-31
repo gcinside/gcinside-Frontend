@@ -28,7 +28,7 @@ const Wrapper = () => {
                   <GithubLogo/><S.Text>Github 로그인</S.Text>
                 </S.OAuthBtn2>
                 <S.SignUpCommentBox>
-                  <S.SignUpComment>계정이 없으신가요?</S.SignUpComment>
+                  <S.SignUpComment>아직 회원이 아니신가요?</S.SignUpComment>
                   <button>회원가입</button>
                 </S.SignUpCommentBox>
               </S.LoginBox>
