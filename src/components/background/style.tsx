@@ -33,7 +33,7 @@ export const GCINSIDE = styled.p`
   font-size: 130px;
   font-weight: bold;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #FFFFFF;
   z-index: 1;
 `;
@@ -55,13 +55,13 @@ export const BottomLine = styled(Flex)`
 export const LeftWrapper = styled(Flex)`
   position: fixed;
   width: 100%;
-  top: -80px;
+  top: -100px;
   left: 0;
 `;
 export const RightWrapper = styled(Flex)`
   position: fixed;
   width: 100%;
-  bottom: -70px;
+  bottom: -85px;
   right: 0;
 `;
 export const LoginBoxWrapper = styled(Flex)`
@@ -72,8 +72,8 @@ export const LoginBox = styled.div`
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 544px;
-  height: 700px;
+  width: 510px;
+  height: 640px;
   background: linear-gradient(147.66deg, rgba(255, 255, 255, 0.18) -0.87%, rgba(255, 255, 255, 0.03) 101.49%);
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -91,10 +91,11 @@ export const Header = styled(Flex)`
   font-family: 'Noto Sans KR', sans-serif;
   color: #FFFFFF;
   font-size: 56px;
-  font-weight: 300;
+  font-weight: lighter;
 `;
 export const Text = styled.p`
-  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: lighter;
   font-size: 20px;
   line-height: 25px;
   margin-left: 2vh;
@@ -104,23 +105,26 @@ export const OAuthBtn1 = styled(Flex)`
   height: 72px;
   background: #FFFFFF;
   border-radius: 15px;
+  box-shadow : 0 0 10px 0 #FFFFFF;
   color: black;
 `;
 export const OAuthBtn2 = styled(OAuthBtn1)`
-  margin-top: 2vh;
-  background: #24292F;
+  margin-top: 1vh;
+  border-radius: 15px;
+  box-shadow : 0 0 10px 0 #24292F;
   color: white;
+  background-color: #24292F;
 `;
 
 export const SignUpCommentBox = styled(Flex)`
   width: 100%;
   margin-bottom: 15vh;
   button {
-    margin-left: 1.5vh;
+    margin-left: 1vh;
     border: none;
     background : none;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #1D96F0;
+    color: #2255E3;
     font-size: 16px;
     margin-bottom: 3px;
   }
