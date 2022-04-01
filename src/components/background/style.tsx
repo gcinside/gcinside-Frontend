@@ -71,7 +71,7 @@ export const RightWrapper = styled(Flex)`
   width: 100%;
   bottom: -85px;
   right: 0;
-  z-index: 1;
+  z-index: 0;
 
   .R1 {
     position: absolute;
