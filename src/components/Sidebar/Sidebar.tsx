@@ -11,7 +11,7 @@ const SideBar = () => {
             <div css={S.Positioner}>
                 <div css={S.LogoWrapper}><I.Logo /></div>
                 <div css={S.SidebarListWrapper}>
-                    <Link href="/Home"><a css={{ backgroundColor: router.pathname === "/Home" ? '#5A66FF' : '' }}><I.Home/>Home</a></Link>
+                    <Link href="/home"><a css={{ backgroundColor: router.pathname === "/home" ? '#5A66FF' : '' }}><I.Home/>Home</a></Link>
                     <Link href="/Top20"><a css={{ backgroundColor: router.pathname === "/Top20" ? '#5A66FF' : '' }}><I.Top20/>Top 20</a></Link>
                     <Link href="/Setting"><a css={{ backgroundColor: router.pathname === "/Setting" ? '#5A66FF' : '' }}><I.Setting/>Setting</a></Link>
                 </div>
