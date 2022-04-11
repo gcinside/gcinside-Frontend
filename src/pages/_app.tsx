@@ -1,9 +1,8 @@
 import type { AppProps } from 'next/app'
-import { Global } from '@emotion/react'
+import { useRouter } from 'next/router';
+import { Global, css } from '@emotion/react'
 import SideBar from '../components/Sidebar/Sidebar'
 import GlobalStyle from '../Styles/GlobalStyle'
-import { css } from "@emotion/react";
-import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -15,7 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Global styles={GlobalStyle}/>
       {router.pathname === '/' ? null : <SideBar />}
       <Component {...pageProps}/>
-      
     </div>
   )
 }

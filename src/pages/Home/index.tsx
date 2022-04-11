@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import * as S from './Style';
-import {Header, Board} from '../../components/index';
-import SideContents from '@/src/components/SideContents/SideContents';
+import {Header, Board, SideContents} from '../../components/index';
 
 const HomePage: NextPage = () => {
     return(

@@ -16,7 +16,7 @@ const Header = () => {
     return(
         <S.Header>
             <S.Text>{returnHeaderValue(router.pathname)}</S.Text>
-            {router.pathname === '/home' && <S.WriteBtn onClick={() => router.push('/home/write')}>글쓰기</S.WriteBtn>}
+            {router.pathname === '/home' && <S.WriteBtn onClick={() => router.push('/write')}>글쓰기</S.WriteBtn>}
         </S.Header>
     )
 }
