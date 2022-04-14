@@ -4,20 +4,20 @@ import Link from 'next/link';
 
 const Profile = () => {
     return(
-        <div css={S.Positioner}>
-            <div css={S.ImgWrapper}>
+        <S.Positioner>
+            <S.ImgWrapper>
                 <I.ProfileImg />
                 <Link href="/Setting">
-                    <div css={S.IconWrapper}>
+                    <S.IconWrapper>
                         <I.Setting />
-                    </div>
+                    </S.IconWrapper>
                 </Link>
-            </div>
-            <div css={S.UserInfo}>
-                <div css={S.NameWrapper}>닉네임</div>
-                <div css={S.EmailWrapper}>s00000@gsm.hs.kr</div>
-            </div>
-        </div>
+            </S.ImgWrapper>
+            <S.UserInfo>
+                <S.NameWrapper>닉네임</S.NameWrapper>
+                <S.EmailWrapper>s00000@gsm.hs.kr</S.EmailWrapper>
+            </S.UserInfo>
+        </S.Positioner>
     )
 }
 

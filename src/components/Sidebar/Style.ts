@@ -1,6 +1,6 @@
-import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 
-export const Positioner = css`
+export const Positioner = styled.div`
     width: 320px;
     height: 100vh;
     grid-template-rows: repeat(2, 180px);
@@ -9,12 +9,12 @@ export const Positioner = css`
     top: 0;
 `;
 
-export const SidebarContainer = css`
+export const SidebarContainer = styled.div`
     width: 320px;
     height: 100vh;
 `;
 
-export const LogoWrapper = css`
+export const LogoWrapper = styled.div`
     width: 280px;
     height: 160px;
     display: flex;
@@ -22,7 +22,7 @@ export const LogoWrapper = css`
     align-items: center;
 `;
 
-export const SidebarListWrapper = css`
+export const SidebarListWrapper = styled.div`
     width: 320px;
     height: 290px;
     display: grid;
@@ -32,9 +32,12 @@ export const SidebarListWrapper = css`
     color: white;
     font-size: 24px;
     padding: 40px 0 40px 0;
+    .active:hover{
+        background: #5A66FF;
+    }
     a{
         width: 230px;
-        height: 55px;
+        height: 60px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -46,7 +49,10 @@ export const SidebarListWrapper = css`
         cursor: pointer;
         svg{
             margin-left: 25px;
-        }    
+        }
+        :hover{
+            background: #595959;
+        }
     }
 
 `;

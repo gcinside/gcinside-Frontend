@@ -1,33 +1,11 @@
+import BoardItem from '../BoardItem/BoardItem'
 import * as S from './Style'
+import * as I from '../../Assets/index';
 
 export const DummyData = [
         {
-            id: 1,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 2,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 3,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 4,
-            image: <div css={S.ImageBox}></div>,
+            id: 5,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -35,7 +13,7 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -43,15 +21,7 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 4,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -59,7 +29,14 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },        {
+            id: 5,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -67,15 +44,15 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
             like: 5,
-        },
+        },      
         {
-            id: 4,
-            image: <div css={S.ImageBox}></div>,
+            id: 5,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -83,7 +60,14 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },        {
+            id: 5,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -91,15 +75,15 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
             like: 5,
-        },
+        },  
         {
-            id: 4,
-            image: <div css={S.ImageBox}></div>,
+            id: 5,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -107,7 +91,14 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
+            title: '게시글 이름',
+            name: '닉네임',
+            date: '2022.03.29',
+            like: 5,
+        },        {
+            id: 5,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
@@ -115,78 +106,32 @@ export const DummyData = [
         },
         {
             id: 5,
-            image: <div css={S.ImageBox}></div>,
+            image: 'img_url',
             title: '게시글 이름',
             name: '닉네임',
             date: '2022.03.29',
             like: 5,
-        },
-        {
-            id: 4,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 5,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 5,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 5,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        {
-            id: 5,
-            image: <div css={S.ImageBox}></div>,
-            title: '게시글 이름',
-            name: '닉네임',
-            date: '2022.03.29',
-            like: 5,
-        },
-        
+        },    
 ]
 
 const Board = () => {
     return(
-        <div css={S.Positioner}>
+        <S.Positioner>
                 {DummyData && DummyData.map((item, idx) => {
                     return(
-                        <div key={idx}>
-                            <div css={S.BoardContainer}>
-                                <div css={S.dummy} key={item.id}>
-                                    {item.image}
-                                    <div css={S.Wrapper}>
-                                        <div css={S.TitleWrapper}>{item.title}</div>
-                                        <div css={S.SecondWrapper}>
-                                            <div css={S.NameWrapper}>{item.name}</div>
-                                            {item.date}
-                                        </div>
-                                    </div>
-                                    <div css={S.LikeWrapper}>{item.like}K</div>
-                                </div>
-                            </div>
-                        </div>
+                        <S.BoardContainer key={item.id}>
+                            <BoardItem 
+                                id={item.id}
+                                title={item.title}
+                                name={item.name}
+                                date={item.date}
+                                like={item.like}
+                                image={item.image === 'img_url' ? <I.NotFoundImg /> : 'IMG'}
+                            />
+                        </S.BoardContainer>
                     )}
                 )}
-        </div>
+        </S.Positioner>
     )
 }
 
