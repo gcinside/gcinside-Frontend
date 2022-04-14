@@ -25,8 +25,11 @@ export const CategoryContainer = css`
     grid-template-rows: repeat(5, 45px);
     margin-top: 20px;
     .active{
-        background-color: #F1F1F1;;
+        background-color: #F1F1F1;
         color: #5A66FF;
+    }
+    .active:hover{
+        background-color: #F1F1F1;
     }
 `;
 
