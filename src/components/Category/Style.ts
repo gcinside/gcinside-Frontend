@@ -32,7 +32,7 @@ export const CategoryContainer = css`
 
 export const CategoryWrapper = css`
     width: 280px;
-    height: 37px;
+    height: 40px;
     padding-left: 20px;
     font-size: 18px;
     font-weight: 400;
@@ -41,6 +41,6 @@ export const CategoryWrapper = css`
     align-items: center;
     cursor: pointer;
     :hover{
-        background-color: #f0f0f0;
+        background-color: #f5f5f5;
     }
 `;

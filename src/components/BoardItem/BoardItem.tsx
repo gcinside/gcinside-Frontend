@@ -7,7 +7,7 @@ interface BoardItemProps {
     name: string;
     date: string;
     like: number;
-    image: string;
+    image: any;
 }
 
 const BoardItem:React.FC<BoardItemProps> = ({

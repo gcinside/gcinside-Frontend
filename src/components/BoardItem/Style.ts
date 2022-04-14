@@ -18,8 +18,7 @@ export const DummyContainer = styled.div`
 export const ImageBox = styled.div`
     display: flex;
     width: 145px;
-    height: 82px;
-    background-color: black;
+    height: 80px;
 `;
 
 export const Wrapper = styled.div`

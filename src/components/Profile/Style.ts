@@ -1,6 +1,6 @@
-import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
-export const Positioner = css`
+export const Positioner = styled.div`
     width: 342px;
     height: 180px;
     border-radius: 5px;
@@ -10,7 +10,7 @@ export const Positioner = css`
     align-items: center;
 `;
 
-export const IconWrapper = css`
+export const IconWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ export const IconWrapper = css`
     }
 `;
 
-export const ImgWrapper = css`
+export const ImgWrapper = styled.div`
     width: 170px;
     height: 170px;
     display: flex;
@@ -36,19 +36,19 @@ export const ImgWrapper = css`
     align-items: center;
 `;
 
-export const UserInfo = css`
+export const UserInfo = styled.div`
     display: grid;
     justify-content: center;
     align-items: center;
 `;
 
-export const NameWrapper = css`
+export const NameWrapper = styled.div`
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 2px;
 `;
 
-export const EmailWrapper = css`
+export const EmailWrapper = styled.div`
     font-size: 14px;
     font-weight: 400;
     color: #C9C9C9;

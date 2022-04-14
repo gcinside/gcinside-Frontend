@@ -1,5 +1,6 @@
 import BoardItem from '../BoardItem/BoardItem'
 import * as S from './Style'
+import * as I from '../../Assets/index';
 
 export const DummyData = [
         {
@@ -125,7 +126,7 @@ const Board = () => {
                                 name={item.name}
                                 date={item.date}
                                 like={item.like}
-                                image={item.image}
+                                image={item.image === 'img_url' ? <I.NotFoundImg /> : 'IMG'}
                             />
                         </S.BoardContainer>
                     )}

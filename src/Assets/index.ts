@@ -5,3 +5,4 @@ export { default as Setting } from "./Setting";
 export { default as ProfileImg } from "./ProfileImg";
 export { default as GithubIcon } from "./Github";
 export { default as GoogleIcon } from "./Google";
+export { default as NotFoundImg} from "./NotfoundImg";
