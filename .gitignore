@@ -47,7 +47,7 @@ config.json
 
 # yarn berry
 .yarn/*
-!.yarn/cache
+!.yarn/cacheㅁ
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
