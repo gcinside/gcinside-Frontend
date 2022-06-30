@@ -1,7 +1,7 @@
 import Document, {
   Html,
-  Head,
   Main,
+  Head,
   NextScript,
   DocumentContext,
 } from 'next/document'
@@ -29,13 +29,14 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="ko-kr">
-        <Head />
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
+        <Html>
+          <Head><title>gcinside</title></Head>
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+          <body>
+            <Main/>
+            <NextScript/>
+          </body>
+        </Html>
+    );
   }
 }
