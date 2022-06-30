@@ -4,14 +4,14 @@ import Document, {
   Head,
   NextScript,
   DocumentContext,
-} from 'next/document'
-import { extractCritical } from '@emotion/server'
+} from 'next/document';
+import { extractCritical } from '@emotion/server';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx)
-    const page = await ctx.renderPage()
-    const styles = extractCritical(page.html)
+    const initialProps = await Document.getInitialProps(ctx);
+    const page = await ctx.renderPage();
+    const styles = extractCritical(page.html);
     return {
       ...initialProps,
       ...page,
@@ -24,19 +24,24 @@ export default class MyDocument extends Document {
           />
         </>
       ),
-    }
+    };
   }
 
   render() {
     return (
-        <Html>
-          <Head><title>gcinside</title></Head>
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
-          <body>
-            <Main/>
-            <NextScript/>
-          </body>
-        </Html>
+      <Html>
+        <Head>
+          <title>gcinside</title>
+        </Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
   }
 }
